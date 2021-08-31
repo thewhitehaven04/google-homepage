@@ -5,7 +5,8 @@ body {
 
 .header {
   background-color: white;
-  min-height: 5vh;
+  --header-height: 5vh;
+  min-height: var(--header-height, 5vh);
   margin: 0;
   padding: 0;
 }
@@ -20,21 +21,23 @@ body {
   flex-direction: row;
   list-style-type: none;
   justify-content: flex-end;
+  align-content: center;
 }
 
 .ul-header > li {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .main {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   height: 85vh;
 }
 
 .google-logo {
-  width: max-content;
+  width: fit-content;
   height: max-content;
 }
 
@@ -56,7 +59,7 @@ body {
   margin: 30px;
   border-radius: 10px;
   height: 1.5em;
-  width: calc(35% - 40px);
+  width: 35vh;
   max-width: 90%;
 }
 
@@ -75,11 +78,11 @@ body {
 }
 
 .footer-left li {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .footer-right li {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .footer-flex a {
