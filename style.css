@@ -1,95 +1,88 @@
-header {
-    color: white;
-    float: right
-}
-
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: space-between;
-    justify-items: normal;
-    margin: auto;
+  font-family: "Roboto";
+  font-size: 16px;
 }
 
-
-.header-buttons {
-    color: rgba(0,0,0,0.87);
-    display: flex 
+.header {
+  background-color: white;
+  min-height: 5vh;
+  margin: 0;
+  padding: 0;
 }
 
-
-.main {
-    margin: auto;
-    flex-grow: 1;
-}
-
-#search-bar { 
-    border-radius: 10px 10px 10px 10px;
-    border-color: gray;
-    display: block;
-    align-self: center;
-}
-
-.google-logo {
-    display: block;
-    align-self: center;
-}
-
-.underbar {
-    align-self: center;
-}
-
-.underbar:hover {
-    border: 2px #222;
-}
-
-footer { 
-    background-color:#DDD;
-}
-
-.right-footer {
-   float: right; 
-}
-
-.left-footer {
-    float: left
-}
-
-.header-buttons{
-    float: right;
+.header a {
+  text-decoration: none;
+  color: #222;
 }
 
 .ul-header {
-    list-style-type: none;
-    display: flex;
-    gap: 10px;
-    margin-right: 10px
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
 }
 
 .ul-header > li {
-    padding: 5px;
+    padding-left: 10px;
 }
 
-a {
-    color: #222;
-    font-family: 'Fira Sans';
-    text-decoration: none;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 85vh;
 }
 
-.ul-footer {
-    display: flex;
-    list-style-type: none;
-    flex-direction: row;
+.google-logo {
+  width: max-content;
+  height: max-content;
 }
 
-.left-footer .ul-footer {
-    justify-content: flex-end;
+.search-buttons {
+  display: inline-block;
 }
 
-.right-footer .ul-footer { 
-    justify-content: flex-start;
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: fill;
+  background-color: #ddd;
+  min-height: 10vh;
 }
 
-.ul-footer > li {
-    padding: 10px;
+#search-bar {
+  margin: 30px;
+  border-radius: 10px;
+  height: 1.5em;
+  width: calc(35% - 40px);
+  max-width: 90%;
+}
+
+.footer-ul-items {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.footer-left {
+  justify-content: flex-start;
+}
+
+.footer-right {
+  justify-content: flex-end;
+}
+
+.footer-left li {
+    padding-right: 10px;
+}
+
+.footer-right li {
+    padding-left: 10px;
+}
+
+.footer-flex a {
+  text-decoration: none;
+  color: #444;
 }
