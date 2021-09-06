@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto";
   font-size: 16px;
+  all: unset;
 }
 
 .header {
@@ -38,11 +39,15 @@ body {
 
 .google-logo {
   width: fit-content;
-  height: max-content;
+  height: fit-content;
+  object-fit: scale-down;
+  image-rendering: optimizeQuality;
 }
 
 .search-buttons {
+  color: rgb(248, 249, 250);
   display: inline-block;
+  border-radius: 4px;
 }
 
 .footer-flex {
@@ -57,10 +62,12 @@ body {
 
 #search-bar {
   margin: 30px;
-  border-radius: 10px;
-  height: 1.5em;
-  width: 35vh;
-  max-width: 90%;
+  
+  object-fit: scale-down;
+}
+
+#search-bar:hover {
+  box-shadow: 0px 0px 9px 2px #DDD;
 }
 
 .footer-ul-items {
