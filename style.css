@@ -1,7 +1,7 @@
 body {
   all: unset;
   font-family: "Roboto", sans-serif;
-  font-size: medium;
+  font-size: small;
 }
 
 .all {
@@ -49,11 +49,11 @@ body {
   border: 0;
   border-radius: 5px;
   color: white;
-  padding-top: 0.55em;
-  padding-bottom: 0.55em;
+  padding-top: 0.65em;
+  padding-bottom: 0.65em;
   padding-left: 27px;
   padding-right: 27px;
-  font-size: 14pt;
+  font-size: small;
 }
 
 #sign-in-button:hover {
@@ -112,7 +112,7 @@ body {
 #search-bar {
   margin: 30px;
   border-radius: 4vh;
-  border-color: #CCC;
+  border-color: #DDD;
   width: 650px;
   font-size: large;
   height: 1.9em;
@@ -153,5 +153,5 @@ body {
 
 .footer-flex a {
   text-decoration: none;
-  color: #444;
+  color: rgb(120, 120, 120, 0.9);
 }
