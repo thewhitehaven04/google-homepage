@@ -1,15 +1,16 @@
 body {
-  font-family: "Roboto";
-  font-size: 16px;
   all: unset;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  --size-margin: 2em;
 }
 
 .header {
   background-color: white;
   --header-height: 5vh;
-  min-height: var(--header-height, 5vh);
-  margin: 0;
-  padding: 0;
+  min-height: var(--header-height, 5vh); 
+  margin-inline: var(--size-margin);
+  padding-inline: 0; 
 }
 
 .header a {
@@ -51,6 +52,7 @@ body {
 }
 
 .footer-flex {
+  all: unset;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -58,6 +60,7 @@ body {
   align-content: fill;
   background-color: #ddd;
   min-height: 10vh;
+  padding-inline: 0;
 }
 
 #search-bar {
@@ -78,6 +81,8 @@ body {
   display: flex;
   flex-direction: row;
   list-style-type: none;
+  margin-inline: var(--size-margin);
+  padding-inline: 0; 
 }
 
 .footer-left {
