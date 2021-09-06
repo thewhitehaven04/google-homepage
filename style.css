@@ -12,7 +12,6 @@ body {
 
 .header {
   background-color: white;
-  --header-height: 5vh;
   flex-basis: 100px; 
   margin-inline: 1em; 
   padding-inline: 0; 
@@ -63,7 +62,7 @@ body {
 
 #apps-icon {
   display: inline; 
-  font-size: 16pt;
+  font-size: 18pt;
   color: rgb(120, 120, 120, 0.85);
 }
 
@@ -77,18 +76,25 @@ body {
 }
 
 .google-logo {
-  width: fit-content;
-  height: fit-content;
   object-fit: scale-down;
+  min-height: 50px;
+  height: 15vh;
   image-rendering: optimizeQuality;
 }
 
+
 .search-buttons {
-  color: rgb(248, 249, 250);
-  display: block;
-  border: none;
-  border-radius: 4px;
-  all: unset;
+  background-color: rgb(242, 242, 242, 0.5);
+  border: solid 1px #FFF;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  padding-inline: 15px;
+  border-radius: 5px;
+}
+
+.search-buttons:hover {
+  border: solid 1px #CCC;
+  box-shadow: 0px 1px 1px 1px rgb(210, 210, 210, 0.3);
 }
 
 .footer-flex {
@@ -107,7 +113,7 @@ body {
   margin: 30px;
   border-radius: 4vh;
   border-color: #CCC;
-  width: 750px;
+  width: 650px;
   font-size: large;
   height: 1.9em;
   object-fit: scale-down;
