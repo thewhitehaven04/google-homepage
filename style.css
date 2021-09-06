@@ -1,21 +1,20 @@
 body {
   all: unset;
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  --size-margin: 2em;
+  font-size: medium;
 }
 
 .header {
   background-color: white;
   --header-height: 5vh;
   min-height: var(--header-height, 5vh); 
-  margin-inline: var(--size-margin);
+  margin-inline: 1em; 
   padding-inline: 0; 
 }
 
 .header a {
   text-decoration: none;
-  color: #222;
+  color: inherit;
 }
 
 .ul-header {
@@ -23,11 +22,43 @@ body {
   flex-direction: row;
   list-style-type: none;
   justify-content: flex-end;
-  align-content: center;
+  color: #444;
+  align-items: center;
 }
 
 .ul-header > li {
-  padding-left: 10px;
+  padding-left: 24px;
+}
+
+#apps-icon {
+  padding: 0.4em;
+}
+
+#apps-icon:hover {
+  background-color: rgb(210, 210, 210, 0.3);
+  border-radius: 50%;
+}
+
+#sign-in-button {
+  background-color: rgb(26, 115, 232);
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding-top: 0.55em;
+  padding-bottom: 0.55em;
+  padding-left: 27px;
+  padding-right: 27px;
+  font-size: 14pt;
+}
+
+#sign-in-button:hover {
+  background-color: rgb(35, 135, 250);
+}
+
+#apps-icon {
+  display: inline; 
+  font-size: 16pt;
+  color: rgb(120, 120, 120, 0.85);
 }
 
 .main {
@@ -58,7 +89,8 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-content: fill;
-  background-color: #ddd;
+  background-color: rgb(242, 242, 242);
+  border-top: 1px solid rgb(100, 100, 100, 0.15);
   min-height: 10vh;
   padding-inline: 0;
 }
@@ -81,7 +113,7 @@ body {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin-inline: var(--size-margin);
+  margin-inline: 2.5em; 
   padding-inline: 0; 
 }
 
