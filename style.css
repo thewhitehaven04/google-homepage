@@ -78,9 +78,8 @@ a {
 }
 
 .google-logo {
-  object-fit: scale-down;
-  min-height: 50px;
-  height: 15vh;
+  object-fit: fill;
+  width: 20rem;
   margin-bottom: 15px;
   image-rendering: optimizeQuality;
 }
@@ -122,7 +121,7 @@ a {
 }
 
 .search-bar:hover {
-  box-shadow: 0px 2px 6px 2px #DDD;
+  box-shadow: 0px 1px 6px 1px #DDD;
 } 
 
 .search-bar__icon-search {
@@ -141,7 +140,7 @@ a {
 .search-bar__input {
   font-size: 0.9rem;
   border: none;
-  width: 25em;
+  width: 30em;
   height: 95%;
   margin-right: 1em;
 }
